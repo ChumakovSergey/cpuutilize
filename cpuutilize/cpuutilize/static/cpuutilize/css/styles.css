@@ -1,0 +1,48 @@
+.header {
+    height: 100px;
+    background: aquamarine;
+    /* display: block; */
+    width: 100%;
+    padding: 15px;
+    margin: 25px 0px;
+}
+
+.logo {
+    margin: 0px auto;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+}
+
+.content{
+    width: 600px;
+    margin: 0 auto;
+}
+tr.tbl_head{
+    background:antiquewhite
+}
+th,td{
+    min-width: 50px;
+    height:30px;
+    text-align: center;
+    vertical-align: middle;
+}
+th.sort {
+    cursor: pointer;
+     color:#33886b
+}
+.sort th.asc{
+
+}
+.sort th.desc{
+
+}
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-color: grey;
+    width:100%
+}

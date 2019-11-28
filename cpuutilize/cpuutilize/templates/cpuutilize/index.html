@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../static/cpuutilize/js/script.js"></script>
+    <script src="../../static/cpuutilize/js/auto_update.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../static/cpuutilize/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script>
+        last_id = {{ last_id }}
+    </script>
+</head>
+<body>
+<div class="header">
+    <div class="logo">
+        <h1>Статистика утилизации CPU</h1>
+    </div>
+</div>
+<div class="content">
+    <table>
+        <tr class="tbl_head">
+            <th></th>
+            <th>Min</th>
+            <th>Max</th>
+            <th>Avg</th>
+        </tr>
+        <tr>
+            <th>Top 100</th>
+            <td>{{ stat_100.min }}</td>
+            <td>{{ stat_100.max }}</td>
+            <td>{{ stat_100.avg }}</td>
+        </tr>
+        <tr>
+            <th>All</th>
+            <td>{{ stat_all.min }}</td>
+            <td>{{ stat_all.max }}</td>
+            <td>{{ stat_all.avg }}</td>
+        </tr>
+    </table>
+    <table id="utilize_tbl">
+        <tr class="tbl_head">
+            <th>№</th>
+            <th class="sort" onclick="sortAction('datetime','datetime')">Дата</th>
+            <th class="sort" onclick="sortAction('value','number')">Утилизация CPU(%)</th>
+        </tr>
+    </table>
+
+</div>
+<div class="footer"></div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+[Unit]
+Description=Служба отправки утилизации CPU
+
+[Service]
+Type=forking
+ExecStart=/opt/cpuutilize/start.sh
+
+[Install]
+WantedBy=multi-user.target

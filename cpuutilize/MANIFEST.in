@@ -1,0 +1,2 @@
+recursive-include cpuutilize/static *.js *.css
+recursive-include cpuutilize/templates *.html
